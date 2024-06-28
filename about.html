@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Royal Enfield</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        nav {
+            width: 100%;
+            background-color: rgb(240, 175, 185);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo img {
+            width: 100px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: black;
+            padding: 10px 20px;
+            font-size: 20px;
+            position: relative;
+            transition: color 0.3s;
+        }
+        .menu a:hover {
+            color: #f70b0b;
+        }
+        .menu a:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: #f70b0b;
+            transition: width 0.4s;
+        }
+        .menu a:hover:before {
+            width: 100%;
+        }
+        .register a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            background: indianred;
+            border-radius: 8px;
+            transition: background 0.3s, border 0.3s;
+        }
+        .register a:hover {
+            background: transparent;
+            border: 1px solid indianred;
+            color: indianred;
+        }
+        .content {
+            padding: 100px 20px 20px;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background: indianred;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .contact-form button:hover {
+            background: #f70b0b;
+        }
+        .contact-info {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        .contact-info p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: rgb(240, 175, 185);
+            color: black;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer a {
+            color: black;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #f70b0b;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.webp" alt="Royal Enfield Logo">
+        </div>
+        <div class="menu">
+            <a href="index.html"><b>HOME</b></a>
+            <a href="model.html"><b>MODEL</b></a>
+            <a href="offer.html"><b>OFFER</b></a>
+            <a href="about.html"><b>ABOUT</b></a>
+        </div>
+        <div class="register">
+            <a href="register.html">Register</a>
+        </div>
+    </nav>
+   
+    <div class="content">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="submit_contact_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <div class="contact-info">
+            <h2>Our Contact Information</h2>
+            <p><strong>Address:</strong>  Royal Enfield , New Baneshwor, KTM</p>
+            <p><strong>Phone:</strong> +9779811722550</p>
+            <p><strong>Email:</strong> @royalenfieldgmail.com</p>
+            <p>Feel free to reach out to us with any questions or concerns. We look forward to hearing from you!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Royal Enfield. All Rights Reserved.</p>
+        <p>
+            <a href="privacy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms of Service</a> | 
+            <a href="contact.html">Contact Us</a>
+        </p>
+    </footer>
+   
+</body>
+</html>

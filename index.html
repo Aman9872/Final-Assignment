@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Enfield</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: url("Background.jpg") no-repeat center center/cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        header::after {
+            content: "";
+            background-color: rgba(69, 68, 68, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        header h1, header p {
+            color: #0f0e0e; 
+            text-shadow: 2px 2px 4px rgba(243, 240, 240, 0.7); 
+            position: relative;
+            z-index: 1;
+        }
+        nav {
+            width: 100%;
+            background-color: rgb(136, 18, 36);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo img {
+            width: 100px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: rgb(247, 243, 243);
+            padding: 10px 20px;
+            font-size: 20px;
+            position: relative;
+            transition: color 0.3s;
+        }
+        .menu a:hover {
+            color: #3213bf;
+        }
+        .menu a:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: #f70b0b;
+            transition: width 0.4s;
+        }
+        .menu a:hover:before {
+            width: 100%;
+        }
+        .register a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            background: indianred;
+            border-radius: 8px;
+            transition: background 0.3s, border 0.3s;
+        }
+        .register a:hover {
+            background: transparent;
+            border: 1px solid indianred;
+            color: indianred;
+        }
+        .content {
+            padding: 120px 20px 20px;
+            flex: 1;
+        }
+        .video {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .video video {
+            max-width: 100%;
+            height: auto;
+        }
+        .description {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+        .description h4 {
+            margin: 0;
+        }
+        footer {
+            background-color: rgb(240, 175, 185);
+            color: black;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer a {
+            color: black;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #f70b0b;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <img src="logo.webp" alt="Royal Enfield Logo">
+        </div>
+        <div class="menu">
+            <a href="index.html"><b>HOME</b></a>
+            <a href="model.html"><b>MODEL</b></a>
+            <a href="offer.html"><b>OFFER</b></a>
+            <a href="about.html"><b>ABOUT</b></a>
+        </div>
+        <div class="register">
+            <a href="register.html">Register</a>
+        </div>
+    </nav>
+   
+    <header>
+        <h1>Welcome to Royal Enfield</h1>
+        <p>Experience the thrill of riding with our classic and adventurous motorcycles</p>
+    </header>
+
+    <div class="content">
+        <div class="video">
+            <video controls loop>
+                <source src="HunterX.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="description">
+            <h4>
+                Royal Enfield is an Indian multinational motorcycle manufacturing company, headquartered in Chennai. The Royal Enfield brand, including its original English heritage, is the oldest global motorcycle brand in continuous production. The company makes classic-looking motorcycles including the Royal Enfield Bullet, Classic 350, Royal Enfield Thunderbird, Meteor 350, Classic 500, Interceptor 650, Continental, Hunter 350, and many more. Royal Enfield also makes adventurous and off-roading motorcycles like the Royal Enfield Himalayan.
+            </h4>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Royal Enfield. All Rights Reserved.</p>
+        <p>
+            <a href="privacy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms of Service</a> | 
+            <a href="contact.html">Contact Us</a>
+        </p>
+    </footer>
+</body>
+</html>
